@@ -11,8 +11,11 @@
    11  git branch
    12  git checkout main
    13  git status
+   # --------------------------aqui me equivoque--------------------------
    14  git pull origin https://github.com/Cesarsol117/Project_almacen.git
    15  git push origin https://github.com/Cesarsol117/Project_almacen.git
+   # ----------------------------------------------------------------------
+   # ------------------se le da agregar el origen remoto en la direccion --------------------
    16  git remote add origin https://github.com/Cesarsol117/Project_almacen.git
    17  git remote
    18  git remote -v
@@ -20,7 +23,6 @@
    20  ls -al
    21  git push origin main
    22* git pull 
-   23  git push origin main --allow-unrelated-histories
    24  git pull origin main --allow-unrelated-histories
    25  ls -al
    26  git status
