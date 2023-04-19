@@ -1,0 +1,22 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Resultado</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">busqueda</h1>
+{% endblock %}
+
+{% block algomas %}
+<h4 class="text-black-50" style="text-align: center;">Resultados de la busqueda</h4>
+<ul>
+    {% for indice in herramientas %}
+        <li>nombre de la herramienta es: {{ indice.nombre }}</li>
+        <li>La cantidad es: {{ indice.cantidad }}</li>
+        <li>Su ubicacion en bodega: {{ indice.ubicacion }}</li>
+        <br>
+    {% endfor %}
+</ul>
+{% endblock %}

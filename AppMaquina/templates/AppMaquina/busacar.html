@@ -1,0 +1,29 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Busqueda</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">busqueda</h1>
+{% endblock %}
+
+{% block algomas %}
+<h4 class="text-black-50" style="text-align: center;">Busqueda</h4>
+
+
+
+<div class="d-flex justify-content-start">
+    <a class="btn btn-primary" href="{% url 'busquedaherra' %}">Buscar Herramienta</a>
+    <a class="btn btn-primary" href="{% url 'busquedainsumos' %}">Buscar insumos</a>
+    <a class="btn btn-primary" href="{% url 'busquedaRepuestos' %}">Buscar Repuestos</a>
+</div>
+<!-- <form action="{% url 'buscar' %}" method="GET" style="text-align: center;">
+
+    <input type="text" name="cosa" id="cosa">
+    <input type="submit" value="buscar">
+
+</form> -->
+{{ mensaje }}
+{% endblock %}

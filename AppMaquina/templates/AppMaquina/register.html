@@ -1,0 +1,23 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Formulario de Registro</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">REgistrarse</h1>
+{% endblock %}
+
+{% block vaelformulario %}
+<h2 class="text-white mb-5">Registrarse</h2>
+<form action="{% url 'register' %}" method="POST">{% csrf_token %}
+   
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Ingresar">
+
+    </form>
+    {{ mensaje }}
+{% endblock %}

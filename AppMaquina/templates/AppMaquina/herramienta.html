@@ -1,0 +1,27 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Herramienta</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">informacion de herramientas</h1>
+{% endblock %}
+
+{% block algomas %}
+<h1>Busqueda de herramienta</h1>
+{% endblock %}
+
+{% block vaelformulario %}
+<h2 class="text-white mb-5">Introducir herramienta</h2>
+<h2 class="text-white mb-5">Formulario Herramienta</h2>
+<form action="{% url 'herramienta' %}" method="POST">{% csrf_token %}
+   
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Enviar">
+
+</form>
+{% endblock %}

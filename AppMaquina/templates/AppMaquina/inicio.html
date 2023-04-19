@@ -1,0 +1,28 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1> inicio</h1>
+{% endblock %}
+
+{% block algo %}
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Informacion</h2>
+                <p class="text-white-50">
+                    EL grupo de Mantenimiento ha creado esta app para ingresar, verificar y editar los insumos y herramientas del almacen de mantenimineto
+                    <a href="https://startbootstrap.com/theme/grayscale/"> en este link encontrara informacion acerca Funtrtion Procaps.</a>
+                    Bienvenido a la aplicacion {{ nombreusuario }}
+                </p>
+            </div>
+        </div>
+        <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+    </div>
+</section>
+{% endblock %}
+
+{% block algomas %}
+<h3> {{ mensaje }} </h3>
+{% endblock %}

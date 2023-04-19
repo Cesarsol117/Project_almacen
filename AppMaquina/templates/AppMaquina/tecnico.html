@@ -1,0 +1,22 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Tecnicos</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">Tecnicos</h1>
+{% endblock %}
+
+{% block vaelformulario %}
+<h2 class="text-white mb-5">Formulario Repuestos</h2>
+<form action="{% url 'tecnico' %}" method="POST">{% csrf_token %}
+   
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Enviar">
+
+    </form>
+{% endblock %}

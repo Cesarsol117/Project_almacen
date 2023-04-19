@@ -1,0 +1,36 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Lista de Herramientas</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">listado</h1>
+{% endblock %}
+
+{% block algomas %}
+<h4 class="text-black-50" style="text-align: center;">Listado de Heramientas</h4>
+<table>
+    <tr>
+        <th>nombre de la herramienta es:</th> 
+        <th>La cantidad es:</th>
+        <th>Su ubicacion en bodega: </th>
+        <th> </th>
+        <th> </th>
+    </tr>
+    {% for indice in herramientas %}
+    <tr>
+        <td>{{ indice.nombre }}</td>
+        <td> {{ indice.cantidad }}</td>
+        <td>{{ indice.ubicacion }}</td>
+        <td><a class="btn btn-danger" href="{% url 'eliminarHerra' indice.id %}">Borrar</a></td>
+        <td><a class="btn btn-success" href="{% url 'editarHerra' indice.id %}">Actualizar</a></td>
+    </tr>   
+        <br>
+        <br>
+    {% endfor %}
+</table>
+
+<h3> {{ mensaje }} </h3>
+{% endblock %}

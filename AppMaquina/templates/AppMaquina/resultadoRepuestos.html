@@ -1,0 +1,35 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Resultado Repuestos</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">busqueda</h1>
+{% endblock %}
+
+{% block algomas %}
+<h4 class="text-black-50" style="text-align: center;">Resultados de la busqueda</h4>
+<table>
+    <tr>
+        <th>Repuesto:</th> 
+        <th>Cantidad:</th>
+        <th>Su ubicacion en bodega: </th>
+        <th>Maquina </th>
+        <th> </th>
+        <th> </th>
+    </tr>
+    {% for indice in repue %}
+        <tr>
+            <td>{{ indice.nombre }}</td>
+            <td> {{ indice.cantidad }}</td>
+            <td>{{ indice.ubicacion }}</td>
+            <td>{{ indice.maquina }}</td>
+            <td><a class="btn btn-danger" href="{% url 'eliminarHerra' indice.id %}">Borrar</a></td>
+            <td><a class="btn btn-success" href="{% url 'editarHerra' indice.id %}">Actualizar</a></td>
+        </tr>   
+        <br>
+    {% endfor %}
+</table>
+{% endblock %}

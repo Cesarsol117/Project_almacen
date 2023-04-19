@@ -1,0 +1,21 @@
+{% extends "AppMaquina/padre.html" %}
+{% load static %}
+
+{% block titulo %}
+<h1>Busqueda</h1>
+{% endblock %}
+
+{% block algo %}
+<h1 class="mb-5">busqueda</h1>
+{% endblock %}
+
+{% block algomas %}
+<h1 class="mb-5">Busqueda Repuestos</h1>
+<form action="{% url 'buscarRepu' %}" method="GET" style="text-align: center;">
+
+    <input type="text" name="esto" id="esto">
+    <input type="submit" value="buscar">
+
+</form>
+{{ mensaje }}
+{% endblock %}
