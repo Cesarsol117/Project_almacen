@@ -1,34 +1,34 @@
-    1  git status
-    2  git add .
-    3  git status
-    4  git commit -am "Se carga todo los archivos pendientes"
-    5  git status
-    6  git branch user
-    7  git branch
-    8  git branch main
-    9  git branch
-   10  git branch mensajes
-   11  git branch
-   12  git checkout main
-   13  git status
-   # --------------------------aqui me equivoque--------------------------
-   14  git pull origin https://github.com/Cesarsol117/Project_almacen.git
-   15  git push origin https://github.com/Cesarsol117/Project_almacen.git
-   # ----------------------------------------------------------------------
-   # ------------------se le da agregar el origen remoto en la direccion --------------------
-   16  git remote add origin https://github.com/Cesarsol117/Project_almacen.git
-   17  git remote
-   18  git remote -v
-   19  ll
-   20  ls -al
-   21  git push origin main
-   22* git pull 
-   24  git pull origin main --allow-unrelated-histories
-   25  ls -al
-   26  git status
-   27  git push origin main
-   28  git log
-   29  git log -stat
-   30  git log -stats
-   31  git log .
-   32  history > upload_github.txt
+1  git status
+2  git add .
+3  git status
+4  git commit -am "Se carga todo los archivos pendientes"
+5  git status
+6  git branch user
+7  git branch
+8  git branch main
+9  git branch
+10  git branch mensajes
+11  git branch
+12  git checkout main
+13  git status
+# --------------------------aqui me equivoque--------------------------
+14  git pull origin https://github.com/Cesarsol117/Project_almacen.git
+15  git push origin https://github.com/Cesarsol117/Project_almacen.git
+# ----------------------------------------------------------------------
+# ------------------se le da agregar el origen remoto en la direccion --------------------
+16  git remote add origin https://github.com/Cesarsol117/Project_almacen.git
+17  git remote
+18  git remote -v
+19  ll
+20  ls -al
+21  git push origin main
+22* git pull 
+24  git pull origin main --allow-unrelated-histories
+25  ls -al
+26  git status
+27  git push origin main
+28  git log
+29  git log -stat
+30  git log -stats
+31  git log .
+32  history > upload_github.txt
